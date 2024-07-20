@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Registro de Juegos</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1></h1>
+    </header>
+    <main class="contenedor_principal">
+        <div class="contenedor">
+            <textarea class="area" cols="30" rows="10" placeholder="0" id="area" ></textarea>
+            <textarea name="resultado" id="resultado" class="resultado" readonly></textarea>
+            <div class="operadores">
+                <button onclick="agregarSimbolo('+')">+</button>
+                <button onclick="agregarSimbolo('-')">-</button>
+                <button onclick="agregarSimbolo('*')">*</button>
+                <button onclick="agregarSimbolo('/')">/</button>
+                <button onclick="calcular()">=</button>
+                <button class="eliminar" onclick="limpiar()">AC</button>
+            </div>
+            <div class="numeros">
+                <button id="uno" type="button" onclick="agregarCaracter('1')">1</button>
+                <button id="dos" onclick="agregarCaracter('2')">2</button>
+                <button id="tres" onclick="agregarCaracter('3')">3</button>
+                <button id="cuatro" onclick="agregarCaracter('4')">4</button>
+                <button id="cinco" onclick="agregarCaracter('5')">5</button>
+                <button id="seis" onclick="agregarCaracter('6')">6</button>
+                <button id="siete" onclick="agregarCaracter('7')">7</button>
+                <button id="ocho" onclick="agregarCaracter('8')">8</button>
+                <button id="nueve" onclick="agregarCaracter('9')">9</button>
+                <button id="cero" onclick="agregarCaracter('0')">0</button>
+            </div>
+        </div>
+        
+        
+    </main>
+    <footer>
+
+    </footer>
 </body>
+<script src="app.js"></script>
 </html>
